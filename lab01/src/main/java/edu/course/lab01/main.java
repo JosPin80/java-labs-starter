@@ -1,12 +1,10 @@
 package edu.course.lab01;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 class CLI {
 
-    public static void main(String[] args) {
+    static void main() {
         Scanner in = new Scanner(System.in);
         System.out.print("test menu:\n1. isEven\n2. isPrime\n3. isPalindrome\n4. average\n\ninput: ");
         int num = in.nextInt();
