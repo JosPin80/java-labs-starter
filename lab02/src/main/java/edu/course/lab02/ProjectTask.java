@@ -30,12 +30,12 @@ public class ProjectTask {
 
 
     public ProjectTask(String id, String title, TaskStatus status, int estimatedHours) {
-        if (id == null || id.isEmpty()) {
+        if (id == null || id.isBlank()) {
             throw new IllegalArgumentException(
                     "Nothing is being passed to the [String id]"
             );
         }
-        if (title == null || title.isEmpty()) {
+        if (title == null || title.isBlank()) {
             throw new IllegalArgumentException(
                     "Nothing is being passed to the [String title]"
             );
@@ -67,13 +67,13 @@ public class ProjectTask {
         status = amount;
     }
 
-    public void chengeEstimatedHours(int hours) {
-        if (hours < 0) {
+    public void increaseEstimatedHours(int hours) {
+        if (hours <= 0) {
             throw new IllegalArgumentException(
                     "estimatedHours cannot be negative [int estimatedHours]"
             );
         }
 
-        estimatedHours = hours;
+        estimatedHours += hours;
     }
 }
