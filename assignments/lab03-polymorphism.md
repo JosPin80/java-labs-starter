@@ -52,7 +52,7 @@ public interface PriorityPolicy {
 - `EffortPriorityPolicy`;
 - `StatusPriorityPolicy`.
 
-Создайте `TaskPrioritizer`, принимающий `PriorityPolicy` через конструктор и выбирающий более приоритетную из двух задач.
+Создайте `TaskPrioritizerTest`, принимающий `PriorityPolicy` через конструктор и выбирающий более приоритетную из двух задач.
 
 ### Инженерия систем искусственного интеллекта
 
